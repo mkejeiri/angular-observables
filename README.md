@@ -6,4 +6,3 @@ Edit 4
 Edit 5
 
 [my github folder](https://github.com/mkejeiri/myApp)
-
