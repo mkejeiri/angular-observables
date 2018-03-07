@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit, OnDestroy {
      * we need to unsubscribe our observables because they don't get destroyed after 
      * the hosted component is destroyed, otherwise we will create a MEMORY LEAK!!! 
      * we should implement OnDestroy-life-cycle-hock, and inside 'ngOnDetroyed()' we should unsubscribe 
-     * from all custom observales (angular observale will be automatically unsubscribe by Angular, don't bother then!)
+     * from all custom observales (unlike built-in angular observales which will get automatically unsubscribed by Angular!)
      */      
     const myObservable = Observable.create((observer:Observer<string>) =>{
       setTimeout(()=>{
